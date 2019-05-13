@@ -11,7 +11,7 @@ let dropArea = document.getElementById('drop-area');
 });
 
 ['dragleave', 'drop'].forEach(eventName => {
-  dropArea.addEventListener(eventName, unhighlight, false);
+  dropArea.addEventListener(eventName, unHighlight, false);
 });
 
 // Handle dropped files
@@ -22,11 +22,11 @@ function preventDefaults(e) {
   e.stopPropagation();
 }
 
-function highlight(e) {
+function highlight() {
   dropArea.classList.add('active');
 }
 
-function unhighlight(e) {
+function unHighlight() {
   dropArea.classList.remove('active');
 }
 
@@ -89,7 +89,7 @@ function uploadFile(file, i) {
     updateProgress(i, (e.loaded * 100.0 / e.total) || 100);
   });
 
-  xhr.addEventListener('readystatechange', (e) => {
+  xhr.addEventListener('readystatechange', () => {
     if (xhr.readyState === 4 && xhr.status === 200) {
       updateProgress(i, 100);
     } else if (xhr.readyState === 4 && xhr.status !== 200) {
