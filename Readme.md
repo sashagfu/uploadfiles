@@ -10,7 +10,7 @@ Node.js 0.10 or higher is required.
   Go to the folder:
 
 ```bash
-$ express /tmp/foo && cd /uploadfiles
+$ cd /uploadfiles
 ```
 
   Install dependencies:
