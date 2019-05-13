@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Uploadfiles</title>
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Uploadfiles</h1>
+
+  <div id="drop-area">
+    <p>Drag one or more files to this Drop Zone ...</p>
+    <p>
+      <small>
+        You can only upload the following file type: jpg, jpeg, png, gif, pdf.
+      </small>
+    </p>
+    <form class="my-form">
+      <input
+        type="file"
+        id="file-item"
+        multiple accept="image/*"
+        onchange="handleFiles(this.files)">
+      <label for="file-item">Select some files</label>
+    </form>
+    <progress id="progress-bar" max=100 value=0></progress>
+    <div id="preview" /></div>
+  </div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>

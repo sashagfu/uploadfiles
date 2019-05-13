@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+#drop-area {
+  border: 2px dashed darkolivegreen;
+  width: 50%;
+  height: 300px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#drop-area.active {
+  border-color: darkred;
+}
+
+p {
+  margin-top: 0;
+}
+
+.my-form {
+  display: none;
+}
+
+#file-item {
+  display: none;
+}
+
+#preview {
+  margin-top: 10px;
+}
+
+#preview img {
+  border: 1px solid grey;
+  width: 100px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
