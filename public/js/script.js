@@ -72,7 +72,7 @@ function previewFile(file) {
   reader.readAsDataURL(file);
   reader.onloadend = () => {
     let img = document.createElement('img');
-    img.src = reader.result;
+    img.src = file.type === 'application/pdf' ? '/img/pdf-icon.png' : reader.result;
     document.getElementById('preview').appendChild(img);
   }
 }
