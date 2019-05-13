@@ -1,6 +1,6 @@
-###################
-Upload files
-###################
+# Upload files
+
+Drag and drop file upload.
 
 ## Quick Start
 
@@ -24,3 +24,5 @@ $ npm install
 ```bash
 $ node app.js
 ```
+
+  and visit [http://localhost:3000](http://localhost:3000) in your browser.
